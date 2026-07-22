@@ -1,0 +1,20 @@
+{
+    "name": "hidencloud/status-monitor",
+    "description": "Monitors the uptime of websites and hosts via real HTTP and TCP checks.",
+    "authors": [
+        {
+            "name": "HCTestDash"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {}
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\StatusMonitor\\": ""
+        }
+    }
+}

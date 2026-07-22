@@ -1,0 +1,11 @@
+{
+    "name": "StatusMonitor",
+    "alias": "statusmonitor",
+    "description": "Monitors the uptime of websites and hosts via HTTP and TCP checks.",
+    "keywords": ["monitor", "uptime", "status"],
+    "priority": 0,
+    "providers": [
+        "Modules\\StatusMonitor\\Providers\\StatusMonitorServiceProvider"
+    ],
+    "files": []
+}
