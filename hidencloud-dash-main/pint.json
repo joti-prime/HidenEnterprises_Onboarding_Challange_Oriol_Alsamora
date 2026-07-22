@@ -1,0 +1,10 @@
+{
+    "preset": "laravel",
+    "rules": {
+        "concat_space": false,
+        "braces_position": false,
+        "function_declaration": false,
+        "control_structure_braces": false,
+        "not_operator_with_successor_space": false
+    }
+}

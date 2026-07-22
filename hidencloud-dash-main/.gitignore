@@ -1,0 +1,55 @@
+# Laravel base
+/.phpunit.cache
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+.env
+.env.backup
+.env.production
+.env.bak.*
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+auth.json
+npm-debug.log
+yarn-error.log
+/.fleet
+/.idea
+/.vscode
+
+# HidenCloud workflow
+*.bak.*
+__MACOSX/
+Modules/__MACOSX/
+Modules/Tickets/.idea/
+Modules/Downloads/vendor/
+
+# Runtime data
+*.log
+storage/**/*
+!storage/app/
+!storage/app/.gitignore
+!storage/framework/
+!storage/framework/cache/
+!storage/framework/cache/.gitignore
+!storage/framework/sessions/
+!storage/framework/sessions/.gitignore
+!storage/framework/views/
+!storage/framework/views/.gitignore
+!storage/logs/
+!storage/logs/.gitignore
+bootstrap/cache/**/*
+!bootstrap/cache/.gitignore
+
+# IDE helpers (regenerated)
+_ide_helper.php
+_ide_helper_models.php
+.phpstorm.meta.php
+
+# OS
+.DS_Store
+Thumbs.db
+.playwright-cli/

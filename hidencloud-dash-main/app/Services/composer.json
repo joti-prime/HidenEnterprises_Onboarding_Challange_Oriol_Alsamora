@@ -1,0 +1,25 @@
+{
+    "name": "wemx/service-cloudflare",
+    "type": "laravel-module",
+    "description": "A cloudflare service for developers",
+    "authors": [
+        {
+            "name": "GIGABAIT",
+            "email": "xgigabaitx@gmail.com"
+        }
+    ],
+    "extra": {
+        "module-dir": "app/Services",
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\Services\\CloudFlare\\": ""
+        }
+    }
+}

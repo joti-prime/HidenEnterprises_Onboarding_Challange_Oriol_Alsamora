@@ -1,0 +1,11 @@
+{
+    "name": "CloudFlare",
+    "alias": "cloudflare",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "App\\Services\\CloudFlare\\Providers\\CloudFlareServiceProvider"
+    ],
+    "files": ["helper.php"]
+}

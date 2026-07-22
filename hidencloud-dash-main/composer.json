@@ -1,0 +1,94 @@
+{
+    "name": "laravel/laravel",
+    "type": "project",
+    "description": "Wemx Laravel",
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.4|^8.0",
+        "ext-curl": "*",
+        "ext-zip": "*",
+        "bacon/bacon-qr-code": "^2.0",
+        "barryvdh/laravel-debugbar": "^v3.13",
+        "barryvdh/laravel-dompdf": "^2.1",
+        "barryvdh/laravel-ide-helper": "*",
+        "geoip2/geoip2": "^3.0",
+        "guzzlehttp/guzzle": "^7.0",
+        "laravel/framework": "^11.0",
+        "laravel/sanctum": "^4.0",
+        "laravel/socialite": "^v5.12",
+        "laravel/tinker": "^v2.9",
+        "league/omnipay": "^3.2",
+        "monicahq/laravel-cloudflare": "^3.7",
+        "nwidart/laravel-modules": "^10.0",
+        "omnipay/paypal": "^3.0",
+        "omnipay/stripe": "^3.2",
+        "php-http/guzzle7-adapter": "^1.0",
+        "phplibw/json": "*",
+        "pragmarx/google2fa-laravel": "^v2.2",
+        "ryangjchandler/laravel-cloudflare-turnstile": "^1.1",
+        "socialiteproviders/discord": "^4.2",
+        "spatie/laravel-ignition": "^2.5",
+        "stripe/stripe-php": "^v10.21",
+        "team-reflex/discord-php": "^7.3",
+        "wemx/installer": "dev-web"
+    },
+    "require-dev": {
+        "fakerphp/faker": "^1.23",
+        "laravel/pint": "^v1.15",
+        "laravel/sail": "^v1.29",
+        "mockery/mockery": "^1.6",
+        "nunomaduro/collision": "^v8.1",
+        "phpunit/phpunit": "^10.5"
+    },
+    "autoload": {
+        "files": [
+            "app/helpers.php"
+        ],
+        "psr-4": {
+            "App\\": "app/",
+            "Modules\\": "Modules/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-update-cmd": [
+            "@php artisan vendor:publish --tag=laravel-assets --ansi --force",
+            "@php artisan module:update",
+            "@php artisan module:publish"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": [
+                "phplibw/json"
+            ]
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "php-http/discovery": true,
+            "wikimedia/composer-merge-plugin": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
