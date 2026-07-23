@@ -260,4 +260,6 @@ return [
         'Google2FA' => PragmaRX\Google2FALaravel\Facade::class,
     ])->toArray(),
 
+    'license' => env('APP_LICENSE', ''),
+
 ];
