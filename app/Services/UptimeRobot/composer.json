@@ -1,0 +1,20 @@
+{
+    "name": "hidencloud/uptimerobot",
+    "description": "Provisions and manages real uptime monitors through the UptimeRobot v3 API.",
+    "authors": [
+        {
+            "name": "HCTestDash"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {}
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\Services\\UptimeRobot\\": ""
+        }
+    }
+}

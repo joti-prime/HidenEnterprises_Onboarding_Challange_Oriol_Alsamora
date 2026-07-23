@@ -1,4 +1,5 @@
 {
     "Universal": true,
-    "StatusMonitor": true
+    "StatusMonitor": true,
+    "UptimeRobot": true
 }

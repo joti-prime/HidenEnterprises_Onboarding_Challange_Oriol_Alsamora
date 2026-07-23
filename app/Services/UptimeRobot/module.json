@@ -1,0 +1,11 @@
+{
+    "name": "UptimeRobot",
+    "alias": "uptimerobot",
+    "description": "Provisions and manages real uptime monitors through the UptimeRobot API.",
+    "keywords": ["uptimerobot", "monitoring", "service"],
+    "priority": 0,
+    "providers": [
+        "App\\Services\\UptimeRobot\\Providers\\UptimeRobotServiceProvider"
+    ],
+    "files": []
+}
