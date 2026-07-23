@@ -12,7 +12,7 @@ class UptimeRobotApi
 
     public function __construct(?string $apiKey = null)
     {
-        $this->apiKey = $apiKey ?? (string) settings('uptimerobot::api_key');
+        $this->apiKey = $apiKey ?? (string) settings('encrypted::uptimerobot::api_key');
     }
 
     /**
